@@ -112,3 +112,37 @@ latest course style
     border-radius: 15px;
     padding: 3px 4px;
 }
+ /* ------------
+    media query
+------------ */
+/* small device */
+@media screen and (max-width: 688px) {
+    body{
+        background-color: #FFFFFF;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+      }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+            
+    }
+    .player{
+        margin-left: 70px;
+    }  
+}
+/* medium device */
+@media screen and (min-width: 689px) and (max-width: 992px){
+    .container{
+        width: 100%;
+      }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+            
+    }
+    .player{
+        margin-left: 70px;
+    }  
+}
+
